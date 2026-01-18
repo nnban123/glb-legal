@@ -3,35 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLB - Official Support & Legal</title>
+    <title>GLB Official Portal - NEXTBASE</title>
     <style>
-        body { font-family: -apple-system, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-        h1 { border-bottom: 2px solid #333; padding-bottom: 10px; }
-        h2 { margin-top: 40px; color: #007AFF; }
-        section { margin-bottom: 30px; background: #f9f9f9; padding: 20px; border-radius: 12px; }
+        :root { 
+            --bg-color: #0a0a0a; /* 漆黒 */
+            --card-bg: #1a1a1a; 
+            --accent-gold: #d4af37; /* 磨き抜かれた金 */
+            --text-main: #ffffff;
+            --text-sub: #a0a0a0;
+        }
+        body { font-family: -apple-system, "SF Pro Display", sans-serif; line-height: 1.8; color: var(--text-main); background-color: var(--bg-color); margin: 0; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 22px; }
+        header { padding: 100px 0 60px; text-align: center; border-bottom: 1px solid var(--accent-gold); }
+        h1 { font-size: 64px; font-weight: 700; letter-spacing: 12px; margin: 0; color: var(--accent-gold); }
+        .hero-text { font-size: 18px; color: var(--text-sub); margin-top: 15px; letter-spacing: 4px; text-transform: uppercase; }
+        section { padding: 80px 0; border-bottom: 1px solid #333; }
+        h2 { font-size: 28px; font-weight: 600; margin-bottom: 40px; color: var(--accent-gold); letter-spacing: 2px; }
+        .card { background: var(--card-bg); padding: 40px; border-radius: 4px; border-left: 5px solid var(--accent-gold); margin-bottom: 30px; }
+        .contact-box { border: 1px solid var(--accent-gold); padding: 60px; text-align: center; margin-top: 40px; }
+        .contact-box a { color: var(--accent-gold); text-decoration: none; font-weight: 700; font-size: 22px; letter-spacing: 2px; }
+        p { font-size: 17px; color: #d0d0d0; }
+        footer { padding: 60px 0; text-align: center; color: var(--text-sub); font-size: 11px; letter-spacing: 2px; }
     </style>
 </head>
 <body>
-    <h1>GLB (Global Language Breaker)</h1>
+<div class="container">
+    <header>
+        <h1>GLB</h1>
+        <p class="hero-text">Global Language Breaker</p>
+    </header>
 
-    <section id="support">
+    <section>
+        <h2>Vision</h2>
+        <div class="card">
+            <p><strong>30年後の未来から逆算する。</strong></p>
+            <p>NEXTBASEは、今の子供たちが大人になった世界を計算し、そこにあるべき「言葉の自由」を定義します。GLBは、単なる翻訳ツールを超えた、次世代への贈り物です。</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technology</h2>
+        <div class="card">
+            <p>核心（シード）をデバイス内に。プライバシーを絶対の聖域に。オフライン環境下で動作する独自のロジックが、あなたの思考を外部の干渉から守ります。</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Privacy & Terms</h2>
+        <p><strong>Privacy Policy:</strong> データの収集は一切行いません。情報はあなたのデバイスの中だけで完結し、外部へ送信されることはありません。</p>
+        <p><strong>Terms of Use:</strong> 本アプリはApple標準のEULAに基づき提供されます。翻訳結果の最終判断はユーザーの知性に委ねられます。</p>
+    </section>
+
+    <section>
         <h2>Support</h2>
-        <p>ご質問や不具合報告は、以下のNEXT BASE 窓口までお問い合わせください。</p>
-        <p>Email: (ここにメールアドレスを記載)</p>
-    </section>
-
-    <section id="privacy">
-        <h2>Privacy Policy</h2>
-        <p>本アプリは利用者の個人情報を取得・収集することはありません。翻訳処理はデバイス内で完結、または匿名化された状態で処理されます。</p>
-    </section>
-
-    <section id="terms">
-        <h2>Terms of Use</h2>
-        <p>本サービスは「現状有姿」で提供されます。利用者は自己の責任において本アプリを使用するものとします。</p>
+        <div class="contact-box">
+            <p>NEXTBASE One-HA Division</p>
+            <a href="mailto:info@nextbase-japan.com">info@nextbase-japan.com</a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 NEXT BASE. All rights reserved.</p>
+        <p>© 2026 NORI-san / NEXT BASE Japan. Created with AI System "Tomori".</p>
     </footer>
+</div>
 </body>
 </html>
