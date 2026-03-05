@@ -4,220 +4,119 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>NEXTBASE JAPAN</title>
-  <meta name="description" content="NEXTBASE JAPAN — Official site" />
   <style>
     :root{
-      --bg:#050505;
-      --panel:#0e0e0e;
-      --line:#232323;
+      --bg:#0b0b0b;
+      --panel:#121212;
+      --line:#2a2a2a;
       --gold:#d6b25e;
-      --gold2:#b9933a;
-      --text:#e8e8e8;
+      --text:#eaeaea;
       --muted:#bdbdbd;
-      --shadow: 0 10px 30px rgba(0,0,0,.45);
-      --radius: 16px;
     }
     *{box-sizing:border-box}
-    html,body{height:100%}
     body{
       margin:0;
-      background: radial-gradient(1200px 700px at 20% 10%, rgba(214,178,94,.10), transparent 60%),
-                  radial-gradient(900px 600px at 90% 30%, rgba(214,178,94,.07), transparent 55%),
-                  var(--bg);
+      background:var(--bg);
       color:var(--text);
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP",Arial,sans-serif;
       line-height:1.7;
     }
-    a{color:var(--gold); text-decoration:none}
-    a:hover{opacity:.85}
-    .wrap{max-width:980px; margin:0 auto; padding:28px 18px 60px}
-    .topbar{
-      display:flex; align-items:center; justify-content:space-between;
+    .wrap{max-width:900px;margin:0 auto;padding:28px 16px 60px}
+    header{
       border-bottom:1px solid var(--line);
       padding:10px 0 18px;
-      margin-bottom:24px;
+      margin-bottom:22px;
     }
     .brand{
-      display:flex; flex-direction:column; gap:6px;
-    }
-    .brand .name{
-      letter-spacing:.22em;
-      font-weight:800;
       color:var(--gold);
+      font-weight:800;
+      letter-spacing:.18em;
       font-size:22px;
     }
-    .brand .tag{
-      color:var(--muted);
-      font-size:12px;
-      letter-spacing:.08em;
-    }
-    .pill{
-      border:1px solid var(--line);
-      background:rgba(14,14,14,.75);
-      padding:10px 14px;
-      border-radius:999px;
-      font-size:12px;
-      color:var(--muted);
-    }
-    .hero{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:18px;
-      align-items:stretch;
-      margin-top:18px;
-    }
-    @media (max-width: 860px){ .hero{grid-template-columns:1fr} }
+    .sub{color:var(--muted);font-size:12px;margin-top:8px}
     .card{
-      background:linear-gradient(180deg, rgba(14,14,14,.92), rgba(14,14,14,.78));
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      padding:20px;
-      box-shadow:var(--shadow);
-    }
-    .h1{
-      margin:0 0 10px 0;
-      font-size:30px;
-      letter-spacing:.06em;
-      color:var(--gold);
-      font-weight:800;
-    }
-    .lead{
-      margin:0;
-      color:var(--text);
-      font-size:14px;
-    }
-    .grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:14px;
-      margin-top:16px;
-    }
-    @media (max-width: 640px){ .grid{grid-template-columns:1fr} }
-    .item{
+      background:var(--panel);
       border:1px solid var(--line);
       border-radius:14px;
-      padding:14px;
-      background:rgba(5,5,5,.35);
+      padding:18px;
+      margin:14px 0;
     }
-    .item .t{
-      color:var(--gold);
-      font-weight:700;
-      letter-spacing:.08em;
-      margin-bottom:6px;
-    }
-    .item .d{
-      color:var(--muted);
-      font-size:12px;
-      margin-bottom:10px;
-    }
+    h1,h2{margin:0 0 10px 0;color:var(--gold)}
+    p{margin:0 0 10px 0}
+    a{color:var(--gold);text-decoration:none}
+    a:hover{opacity:.85}
+    .links{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+    @media (max-width:640px){.links{grid-template-columns:1fr}}
     .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:8px;
-      padding:10px 12px;
-      border-radius:12px;
-      border:1px solid rgba(214,178,94,.45);
-      background:linear-gradient(180deg, rgba(214,178,94,.12), rgba(214,178,94,.04));
-      color:var(--gold);
-      font-weight:700;
-      font-size:12px;
-      letter-spacing:.06em;
-      width:100%;
-    }
-    .btn.secondary{
+      display:block;
       border:1px solid var(--line);
-      background:rgba(14,14,14,.55);
-      color:var(--text);
-      font-weight:600;
+      border-radius:12px;
+      padding:12px 14px;
+      background:#0f0f0f;
     }
-    .footer{
-      margin-top:22px;
-      padding-top:16px;
+    .btn b{display:block;color:var(--gold);margin-bottom:4px}
+    .btn span{color:var(--muted);font-size:12px}
+    footer{
       border-top:1px solid var(--line);
+      margin-top:22px;
+      padding-top:14px;
       color:var(--muted);
       font-size:12px;
       display:flex;
+      justify-content:space-between;
       gap:10px;
       flex-wrap:wrap;
-      justify-content:space-between;
-      align-items:center;
     }
-    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
   </style>
 </head>
-
 <body>
   <div class="wrap">
-    <div class="topbar">
-      <div class="brand">
-        <div class="name">NEXTBASE JAPAN</div>
-        <div class="tag">Official Site / Legal / Support</div>
-      </div>
-      <div class="pill mono">nextbase-japan.com</div>
-    </div>
+    <header>
+      <div class="brand">NEXTBASE JAPAN</div>
+      <div class="sub">Official / Legal / Support</div>
+    </header>
 
-    <div class="hero">
-      <div class="card">
-        <div class="h1">BLACK × GOLD</div>
-        <p class="lead">
-          公式ページ準備中。<br>
-          下のリンクから、各種ポリシー・規約・サポート・特商法表示へアクセスできます。
-        </p>
+    <div class="card">
+      <h1>Welcome</h1>
+      <p class="sub">各種ポリシー・規約・サポート・特商法表記はこちら。</p>
 
-        <div class="grid">
-          <div class="item">
-            <div class="t">Privacy Policy</div>
-            <div class="d">個人情報の取り扱い</div>
-            <a class="btn" href="/docs/privacy_policy.html">OPEN</a>
-          </div>
-
-          <div class="item">
-            <div class="t">Terms of Service</div>
-            <div class="d">利用規約</div>
-            <a class="btn" href="/docs/terms_of_service.html">OPEN</a>
-          </div>
-
-          <div class="item">
-            <div class="t">Support</div>
-            <div class="d">問い合わせ窓口</div>
-            <a class="btn secondary" href="/docs/support.html">OPEN</a>
-          </div>
-
-          <div class="item">
-            <div class="t">Legal Notice</div>
-            <div class="d">特定商取引法に基づく表記</div>
-            <a class="btn" href="/docs/legal_notice.html">OPEN</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="t" style="color:var(--gold);font-weight:800;letter-spacing:.10em;margin-bottom:10px;">Status</div>
-        <div class="item">
-          <div class="d" style="margin:0">
-            ・公開は静的（HTML）<br>
-            ・リンクは永久URL<br>
-            ・審査/決済/問い合わせ導線用
-          </div>
-        </div>
-        <div class="footer" style="border-top:none;margin-top:16px;padding-top:0">
-          <span class="mono">© NEXTBASE JAPAN</span>
-          <span class="mono">Updated: <span id="ts"></span></span>
-        </div>
+      <div class="links">
+        <a class="btn" href="/docs/privacy_policy.html">
+          <b>Privacy Policy</b>
+          <span>個人情報の取り扱い</span>
+        </a>
+        <a class="btn" href="/docs/terms_of_service.html">
+          <b>Terms of Service</b>
+          <span>利用規約</span>
+        </a>
+        <a class="btn" href="/docs/support.html">
+          <b>Support</b>
+          <span>問い合わせ窓口</span>
+        </a>
+        <a class="btn" href="/docs/legal_notice.html">
+          <b>Legal Notice</b>
+          <span>特定商取引法に基づく表記</span>
+        </a>
       </div>
     </div>
 
-    <div class="footer">
-      <span>For App Review / Payments / Public Reference</span>
-      <span class="mono">/docs/*</span>
+    <div class="card">
+      <h2>Contact</h2>
+      <p><a href="mailto:info@nextbase-japan.com">info@nextbase-japan.com</a></p>
+      <p class="sub">返信目安：3〜5営業日</p>
     </div>
+
+    <footer>
+      <span class="mono">© NEXTBASE JAPAN</span>
+      <span class="mono" id="ts"></span>
+    </footer>
   </div>
 
   <script>
-    // 表示だけの軽いタイムスタンプ（外部通信なし）
-    const d = new Date();
-    const pad = (n)=> String(n).padStart(2,'0');
+    const d=new Date(); const p=n=>String(n).padStart(2,'0');
     document.getElementById('ts').textContent =
-      `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+      `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}`;
   </script>
 </body>
 </html>
